@@ -30,6 +30,10 @@ main {
     grid-template-columns: 1fr;
 }
 
+button, a , .cl-icon, .cl-logo-text{
+    cursor: pointer;
+}
+
 .cl-header {
     background-color: var(--purple);
     padding: .25em 1em;
@@ -41,11 +45,12 @@ main {
     grid-template-columns: 2em auto 2em;
 }
 
-.cl-logo-text {
+.cl-logo-text > a{
     font-family: 'Lora', 'Times New Roman', Times, serif;
     font-size: 1.62em;
     font-weight: 100;
     color: var(--lightpurple);
+    text-decoration: none;
 }
 
 .cl-search>div {
@@ -320,6 +325,85 @@ li.account {
     font-size: .75em;
 }
 
+.cl-filter-bar > div {
+    margin: 1em 1.5em;
+    color: var(--darkgrey);
+    border-bottom: thin solid var(--grey);
+    padding-bottom: 1em;
+}
+
+.cl-filter-bar span {
+    margin: .5em 0;
+    display: block;
+    font-weight: 200;
+}
+
+.cl-filter-bar ul {
+    list-style: none;
+}
+
+.cl-filter-bar ul > li > button {
+    padding: .5em;
+    font-size: .875em;
+    width: 100%;
+    display: block;
+    text-align: left;
+    background: none;
+    border: none;
+}
+
+.cl-filter-bar div:last-child {
+    border: none;
+}
+
+.category ul > li:last-child,
+.location ul > li:nth-child(2),
+.distance ul > li:last-child,
+.offer ul > li:first-child,
+.featured ul > li:nth-child(2)
+ {
+    border: thin solid var(--purple);
+    border-radius: 3px;
+    background-color: var(--lightpurple);
+    background-image: url('../img/icons/close-small.svg');
+    background-repeat: no-repeat;
+    background-position: 95% center;
+    background-size: .5em;
+    padding-right: 1em;
+}
+
+.price-range > div {
+    margin: 0 .5em;
+}
+
+.price-range input {
+    padding: 1em;
+    border: thin  solid var(--lightgrey);
+    border-radius: 3px;
+    margin: .5em 0;
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+}
+
+.price-range button {
+    color: var(--lightpurple);
+    background-color: var(--purple);
+    padding: 1em;
+    border-radius: 3px;
+    display: block;
+    width: 100%;
+    font-size: .75rem;
+}
+
+button:hover {
+    opacity: .9;
+}
+
+.top-nav .menu-list > li:hover {
+    border-bottom: 1px solid var(--lightpurple)
+}
+
 @media (min-width: 48em) {
     .cl-results {
         grid-template-columns: 1fr 1fr;
@@ -373,7 +457,7 @@ li.account {
         max-width: 45em;
     }
     main {
-        grid-template-columns: 20em 1fr;
+        grid-template-columns: minmax(12em, 20em) minmax(48em, 1fr);
         grid-template-areas: 'head head' 'filter etc' 'filter results' 'filter page' 'foot foot';
     }
     .cl-header {
