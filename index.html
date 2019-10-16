@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Joseph Lao">
+    <meta name="description" content="A redesigned craigslist user infterface">
+    <title>Craigslist</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/icons.css">
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+    <main>
+        <header class="cl-header">
+            <nav class="menu-nav">
+                <div class="top-nav">
+                    <i class="cl-icon humberger collapsed" onclick="toggleMenu();"></i>
+                    <div class="cl-logo-text"><span>craigslist</span></div>
+                    <i class="cl-icon user"></i>
+                </div>
+                <div class="cl-search">
+                    <input type="text" name="search" class="search" placeholder="Macbook Pro">
+                    <i class="cl-icon save"></i>
+                </div>
+                <div class="cl-menu">
+                    <ul class="menu-list">
+                        <li><img src="img/icons/buy-sell.svg" alt="buy and sell">Buy & Sell</li>
+                        <li><img src="img/icons/car.svg" alt="buy and sell"> Vehicles</li>
+                        <li><img src="img/icons/building.svg" alt="buy and sell"> Real Estate</li>
+                        <li><img src="img/icons/jobs.svg" alt="buy and sell"> Jobs</li>
+                        <li><img src="img/icons/service.svg" alt="buy and sell"> Services</li>
+                        <li><img src="img/icons/community.svg" alt="buy and sell"> Community</li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <section class="cl-sub-header">
+            <div class="cl-filter"><i class="cl-icon filter"></i> Filter</div>
+            <div class="cl-view"><i class="cl-icon view"></i> View</div>
+            <div class="cl-sort"><i class="cl-icon sort"></i> Sort</div>
+            <div class="cl-related">
+                <ul class="related-list">
+                    <li>Macbook Pro 2019</li>
+                    <li>Macbook Pro 15"</li>
+                    <li>Macbook Air</li>
+                    <li><i class="cl-icon related-rang"></i></li>
+                </ul>
+            </div>
+            <div class="cl-result-count">
+                <p>Showing 1-10 of 1,213 results for "Macbook Pro"</p>
+            </div>
+        </section>
+
+        <section class="cl-results">
+            <div class="results-card">
+                <div class="card-img"><img src="img/product-1.jpg" alt="macbook pro"></div>
+                <div class="card-info">
+                    <h2 class="price">$1,499.99</h2>
+                    <i class="cl-icon like"></i>
+                    <h3 class="name">Macbook Pro 2015 15"</h3>
+                    <p class="description">Macbook Pro 2015 with 16gb ram 512gb ssh powerful graphics card...</p>
+                    <p class="location"><i class="cl-icon location"></i> Missisauga</p>
+                    <div class="user">
+                        <img src="img/user.jpg" alt="user image">
+                        <span>Joseph Lao</span>
+                    </div>
+                    <div class="date">3 days ago</div>
+                </div>
+            </div>
+
+            <div class="results-card">
+                <div class="card-img"><img src="img/product-2.jpg" alt="macbook pro"></div>
+                <div class="card-info">
+                    <h2 class="price">$1,499.99</h2>
+                    <i class="cl-icon like"></i>
+                    <h3 class="name">Macbook Pro 2015 15"</h3>
+                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce varius
+                        dignissim...</p>
+                    <p class="location"><i class="cl-icon location"></i> Missisauga</p>
+                    <div class="user">
+                        <img src="img/user.jpg" alt="user image">
+                        <span>Joseph Lao</span>
+                    </div>
+                    <div class="date">3 days ago</div>
+                </div>
+            </div>
+
+            <div class="results-card">
+                <div class="card-img"><img src="img/product-3.jpg" alt="macbook pro"></div>
+                <div class="card-info">
+                    <h2 class="price">$1,499.99</h2>
+                    <i class="cl-icon like"></i>
+                    <h3 class="name">Macbook Pro 2015 15"</h3>
+                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce varius
+                        dignissim...</p>
+                    <p class="location"><i class="cl-icon location"></i> Missisauga</p>
+                    <div class="user">
+                        <img src="img/user.jpg" alt="user image">
+                        <span>Joseph Lao</span>
+                    </div>
+                    <div class="date">3 days ago</div>
+                </div>
+            </div>
+
+            <div class="results-card">
+                <div class="card-img"><img src="img/product-1.jpg" alt="macbook pro"></div>
+                <div class="card-info">
+                    <h2 class="price">$1,499.99</h2>
+                    <i class="cl-icon like"></i>
+                    <h3 class="name">Macbook Pro 2015 15"</h3>
+                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce varius
+                        dignissim...</p>
+                    <p class="location"><i class="cl-icon location"></i> Missisauga</p>
+                    <div class="user">
+                        <img src="img/user.jpg" alt="user image">
+                        <span>Joseph Lao</span>
+                    </div>
+                    <div class="date">3 days ago</div>
+                </div>
+            </div>
+
+            <div class="results-card">
+                <div class="card-img"><img src="img/product-1.jpg" alt="macbook pro"></div>
+                <div class="card-info">
+                    <h2 class="price">$1,499.99</h2>
+                    <i class="cl-icon like"></i>
+                    <h3 class="name">Macbook Pro 2015 15"</h3>
+                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce varius
+                        dignissim...</p>
+                    <p class="location"><i class="cl-icon location"></i> Missisauga</p>
+                    <div class="user">
+                        <img src="img/user.jpg" alt="user image">
+                        <span>Joseph Lao</span>
+                    </div>
+                    <div class="date">3 days ago</div>
+                </div>
+            </div>
+
+            <div class="results-card">
+                <div class="card-img"><img src="img/product-1.jpg" alt="macbook pro"></div>
+                <div class="card-info">
+                    <h2 class="price">$1,499.99</h2>
+                    <i class="cl-icon like"></i>
+                    <h3 class="name">Macbook Pro 2015 15"</h3>
+                    <p class="description">Macbook Pro 2015 with 16gb ram 512gb ssh powerful graphics card...</p>
+                    <p class="location"><i class="cl-icon location"></i> Missisauga</p>
+                    <div class="user">
+                        <img src="img/user.jpg" alt="user image">
+                        <span>Joseph Lao</span>
+                    </div>
+                    <div class="date">3 days ago</div>
+                </div>
+            </div>
+
+            <div class="results-card">
+                <div class="card-img"><img src="img/product-2.jpg" alt="macbook pro"></div>
+                <div class="card-info">
+                    <h2 class="price">$1,499.99</h2>
+                    <i class="cl-icon like"></i>
+                    <h3 class="name">Macbook Pro 2015 15"</h3>
+                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce varius
+                        dignissim...</p>
+                    <p class="location"><i class="cl-icon location"></i> Missisauga</p>
+                    <div class="user">
+                        <img src="img/user.jpg" alt="user image">
+                        <span>Joseph Lao</span>
+                    </div>
+                    <div class="date">3 days ago</div>
+                </div>
+            </div>
+
+            <div class="results-card">
+                <div class="card-img"><img src="img/product-3.jpg" alt="macbook pro"></div>
+                <div class="card-info">
+                    <h2 class="price">$1,499.99</h2>
+                    <i class="cl-icon like"></i>
+                    <h3 class="name">Macbook Pro 2015 15"</h3>
+                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce varius
+                        dignissim...</p>
+                    <p class="location"><i class="cl-icon location"></i> Missisauga</p>
+                    <div class="user">
+                        <img src="img/user.jpg" alt="user image">
+                        <span>Joseph Lao</span>
+                    </div>
+                    <div class="date">3 days ago</div>
+                </div>
+            </div>
+
+            <div class="results-card">
+                <div class="card-img"><img src="img/product-1.jpg" alt="macbook pro"></div>
+                <div class="card-info">
+                    <h2 class="price">$1,499.99</h2>
+                    <i class="cl-icon like"></i>
+                    <h3 class="name">Macbook Pro 2015 15"</h3>
+                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce varius
+                        dignissim...</p>
+                    <p class="location"><i class="cl-icon location"></i> Missisauga</p>
+                    <div class="user">
+                        <img src="img/user.jpg" alt="user image">
+                        <span>Joseph Lao</span>
+                    </div>
+                    <div class="date">3 days ago</div>
+                </div>
+            </div>
+
+            <div class="results-card">
+                <div class="card-img"><img src="img/product-1.jpg" alt="macbook pro"></div>
+                <div class="card-info">
+                    <h2 class="price">$1,499.99</h2>
+                    <i class="cl-icon like"></i>
+                    <h3 class="name">Macbook Pro 2015 15"</h3>
+                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce varius
+                        dignissim...</p>
+                    <p class="location"><i class="cl-icon location"></i> Missisauga</p>
+                    <div class="user">
+                        <img src="img/user.jpg" alt="user image">
+                        <span>Joseph Lao</span>
+                    </div>
+                    <div class="date">3 days ago</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cl-pagination">
+            <ul>
+                <li class="active">1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li class="next"><i class="cl-icon page-next"></i></li>
+            </ul>
+        </section>
+
+        <footer class="cl-footer">
+            <div class="site-nav">
+                <p>Craigslist</p>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Feedback</a></li>
+                    <li><a href="#">Advertisement</a></li>
+                </ul>
+            </div>
+            <div class="site-nav">
+                <p>Info</p>
+                <ul>
+                    <li><a href="#">Terms of Use</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Posting Policy</a></li>
+                    <li><a href="#">Safety</a></li>
+                </ul>
+            </div>
+            <div class="site-nav">
+                <p>Support</p>
+                <ul>
+                    <li><a href="#">Help Desk</a></li>
+                    <li><a href="#">Language: en</a></li>
+                </ul>
+            </div>
+            <div class="cl-social">
+                <ul>
+                    <li><i class="cl-icon social facebook"></i></li>
+                    <li><i class="cl-icon social instagram"></i></li>
+                    <li><i class="cl-icon social twitter"></i></li>
+                </ul>
+            </div>
+            <div class="copyright-text">
+                <p>&copy; - craigslist by Joseph Lao</p>
+                <p>All rights reserved</p>
+            </div>
+        </footer>
+    </main>
+</body>
+
+</html>

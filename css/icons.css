@@ -1,0 +1,79 @@
+/* icons section */
+.cl-icon {
+    min-height: 1.5em;
+    min-width: 1.5em;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center center;
+    overflow: hidden;
+}
+
+.cl-icon.collapsed.close {
+    background-image: url('../img/icons/close.svg');
+    background-position: left center;
+}
+
+.cl-icon.collapsed {
+    background-image: url('../img/icons/collapsed.svg');
+    background-position: left center;
+}
+
+.cl-logo-text {
+    text-align: center;
+}
+
+.cl-icon.user {
+    background-image: url('../img/icons/user.svg');
+    background-position: right center;
+}
+
+.cl-icon.save {
+    background-image: url('../img/icons/saved.svg');
+    background-position: right center;
+}
+
+.cl-icon.filter {
+    background-image: url('../img/icons/filter.svg');
+}
+
+.cl-icon.view {
+    background-image: url('../img/icons/view-list.svg');
+}
+
+.cl-icon.sort {
+    background-image: url('../img/icons/sort.svg');
+}
+
+.cl-icon.related-rang {
+    background-image: url('../img/icons/related-rang.svg');
+}
+
+.cl-icon.like {
+    background-image: url('../img/icons/like.svg');
+    background-position: right center;
+}
+
+.cl-icon.location {
+    background-image: url('../img/icons/location.svg');
+}
+
+.cl-icon.page-next {
+    background-image: url('../img/icons/pagination-next.svg');
+}
+
+.social {
+    min-width: 2.5em;
+    min-height: 2.5em;
+}
+
+.cl-icon.facebook {
+    background-image: url('../img/icons/facebook.svg');
+}
+
+.cl-icon.instagram {
+    background-image: url('../img/icons/instagram.svg');
+}
+
+.cl-icon.twitter {
+    background-image: url('../img/icons/twitter.svg');
+}
