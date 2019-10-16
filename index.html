@@ -20,20 +20,39 @@
                 <div class="top-nav">
                     <i class="cl-icon humberger collapsed" onclick="toggleMenu();"></i>
                     <div class="cl-logo-text"><span>craigslist</span></div>
-                    <i class="cl-icon user"></i>
+                    <i class="cl-icon user" onclick="toggleUser();"></i>
+                    <ul class="menu-list">
+                        <li><a href="#">Buy & Sell</a></li>
+                        <li><a href="#">Vehicles</a></li>
+                        <li><a href="#">Real Estate</a></li>
+                        <li><a href="#">Jobs</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Community</a></li>
+                    </ul>
                 </div>
                 <div class="cl-search">
-                    <input type="text" name="search" class="search" placeholder="Macbook Pro">
-                    <i class="cl-icon save"></i>
+                    <div>
+                        <input type="text" name="search" class="search" placeholder="Macbook Pro">
+                        <i class="cl-icon save"></i>
+                    </div>
                 </div>
                 <div class="cl-menu">
-                    <ul class="menu-list">
+                    <ul class="menu-list site">
                         <li><img src="img/icons/buy-sell.svg" alt="buy and sell">Buy & Sell</li>
-                        <li><img src="img/icons/car.svg" alt="buy and sell"> Vehicles</li>
-                        <li><img src="img/icons/building.svg" alt="buy and sell"> Real Estate</li>
-                        <li><img src="img/icons/jobs.svg" alt="buy and sell"> Jobs</li>
-                        <li><img src="img/icons/service.svg" alt="buy and sell"> Services</li>
-                        <li><img src="img/icons/community.svg" alt="buy and sell"> Community</li>
+                        <li><img src="img/icons/car.svg" alt="vehicles">Vehicles</li>
+                        <li><img src="img/icons/building.svg" alt="real estate">Real Estate</li>
+                        <li><img src="img/icons/jobs.svg" alt="jobs">Jobs</li>
+                        <li><img src="img/icons/service.svg" alt="services">Services</li>
+                        <li><img src="img/icons/community.svg" alt="community">Community</li>
+                    </ul>
+                    <ul class="menu-list account">
+                        <li><img src="img/icons/buy-sell.svg" alt="profile">Profile</li>
+                        <li><img src="img/icons/car.svg" alt="post to sell">Post to Sell</li>
+                        <li><img src="img/icons/building.svg" alt="liked items">Liked Items</li>
+                        <li><img src="img/icons/jobs.svg" alt="saved searches">Saved Searches</li>
+                        <li><img src="img/icons/jobs.svg" alt="notifications">Notifications</li>
+                        <li><img src="img/icons/service.svg" alt="settings">Settings</li>
+                        <li><img src="img/icons/community.svg" alt="sign out">Sign Out</li>
                     </ul>
                 </div>
             </nav>
@@ -44,10 +63,12 @@
             <div class="cl-sort"><i class="cl-icon sort"></i> Sort</div>
             <div class="cl-related">
                 <ul class="related-list">
-                    <li>Macbook Pro 2019</li>
-                    <li>Macbook Pro 15"</li>
-                    <li>Macbook Air</li>
-                    <li><i class="cl-icon related-rang"></i></li>
+                    <li class="for-mobile">Macbook Pro 2019</li>
+                    <li class="for-mobile">Macbook Pro 15"</li>
+                    <li class="for-mobile">Macbook Air</li>
+                    <li>Macbook Pro 13"</li>
+                    <li>Macbook Pro 2018</li>
+                    <li class="for-mobile"><i class="cl-icon related-rang"></i></li>
                 </ul>
             </div>
             <div class="cl-result-count">
@@ -124,7 +145,7 @@
             </div>
 
             <div class="results-card">
-                <div class="card-img"><img src="img/product-1.jpg" alt="macbook pro"></div>
+                <div class="card-img"><img src="img/product-3.jpg" alt="macbook pro"></div>
                 <div class="card-info">
                     <h2 class="price">$1,499.99</h2>
                     <i class="cl-icon like"></i>
@@ -208,7 +229,7 @@
             </div>
 
             <div class="results-card">
-                <div class="card-img"><img src="img/product-1.jpg" alt="macbook pro"></div>
+                <div class="card-img"><img src="img/product-3.jpg" alt="macbook pro"></div>
                 <div class="card-info">
                     <h2 class="price">$1,499.99</h2>
                     <i class="cl-icon like"></i>
@@ -235,6 +256,10 @@
                 <li class="next"><i class="cl-icon page-next"></i></li>
             </ul>
         </section>
+
+        <aside class="cl-filter-bar">
+            sdfsdf
+        </aside>
 
         <footer class="cl-footer">
             <div class="site-nav">
@@ -268,10 +293,10 @@
                     <li><i class="cl-icon social instagram"></i></li>
                     <li><i class="cl-icon social twitter"></i></li>
                 </ul>
-            </div>
-            <div class="copyright-text">
-                <p>&copy; - craigslist by Joseph Lao</p>
-                <p>All rights reserved</p>
+                <div class="copyright-text">
+                    <p>&copy; - craigslist by Joseph Lao</p>
+                    <p>All rights reserved</p>
+                </div>
             </div>
         </footer>
     </main>
