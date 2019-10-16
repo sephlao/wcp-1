@@ -234,6 +234,12 @@ li.account {
     align-items: center;
 }
 
+.user > img {
+    max-width: 2em;
+    max-height: 2em;
+    border-radius: 50%;
+}
+
 .user>span {
     padding: 0 .5em;
 }
