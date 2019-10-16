@@ -38,6 +38,7 @@
 
 .cl-icon.view {
     background-image: url('../img/icons/view-list.svg');
+    padding-left: .5em;
 }
 
 .cl-icon.sort {
