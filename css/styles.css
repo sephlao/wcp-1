@@ -198,10 +198,11 @@ li.account {
     display: grid;
     grid-template-columns: 9.375em auto;
     min-height: 10em;
+    max-height: 12em;
 }
 
 .card-img>img {
-    height: 10em;
+    height: 100%;
     width: 100%;
     object-fit: cover;
     display: block;
